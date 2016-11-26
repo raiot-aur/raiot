@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Robotic Lab</title>
+    <title>RAIOT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
@@ -32,50 +32,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Robotic <span>Lab</span></a>
+                <a class="navbar-brand" href="index.html">Robotics Automation & <span>Internet of Things</span></a>
             </header> <!-- navbar-header -->
 
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-nav-robotic navbar-right">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="about.html"><i class="icon-group"></i> About us</a></li>
-                            <li><a href="pricing.html"><i class="icon-usd"></i> Pricing</a></li>
-                            <li><a href="404.html"><i class="icon-frown"></i> Error 404</a></li>
-                            <li><a href="coming.html"><i class="icon-dropbox"></i> Coming Soon</a></li>
-                            <li><a href="register.html"><i class="icon-edit"></i> Registration</a></li>
-                            <li><a href="login.html"><i class="icon-user"></i> Login</a></li>
-                            <li><a href="faq.html"><i class="icon-question"></i> FAQ</a></li>
-                            <li><a href="contact.html"><i class="icon-envelope"></i> Contact</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="typography.html"><i class="icon-font"></i> Typography</a></li>
-                            <li><a href="components.html"><i class="icon-th-large"></i> Components</a></li>
-                            <li><a href="grid.html"><i class="icon-th"></i> Grid Layout</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="blog.html"><i class="icon-indent-right"></i> Blog Right Sidebar</a></li>
-                            <li><a href="blog_left.html"><i class="icon-indent-left"></i> Blog Left Sidebar</a></li>
-                            <li><a href="blog_full.html"><i class="icon-align-justify"></i> Blog Full Width</a></li>
-                            <li class="divider"></li>
-                            <li><a href="single.html"><i class="icon-file-text-alt"></i> Blog Single Item</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portafolio <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="portafolio.html"><i class="icon-folder-open-alt"></i> Portafolio</a></li>
-                            <li><a href="portafolio_item.html"><i class="icon-picture"></i> Portafolio Item</a></li>
-                        </ul>
-                    </li>
+                    <li class="active"><a href="www.amity.edu"><img src="img/amity.png" width="15px"> Amity University Rajasthan</a></li>
                 </ul> <!-- navbar-nav -->
             </div><!--navbar-collapse -->
         </div> <!--container -->
@@ -84,12 +46,6 @@
     <div class="container">
         <header class="section-title">
             <h1>Registration Form</h1>
-
-            <ol class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Pages</a></li>
-                <li class="active">Register</li>
-            </ol>
         </header>
 
         <div class="row">
@@ -97,39 +53,33 @@
                 <div class="register-form">
                     <form role="form">
                         <div class="form-group">
-                            <label for="InputUserName">User Name<sup>*</sup></label>
-                            <input type="text" class="form-control" id="InputUserName">
-                        </div>
-                        <div class="form-group">
-                            <label for="InputFirstName">First Name</label>
-                            <input type="text" class="form-control" id="InputFirstName">
-                        </div>
-                        <div class="form-group">
-                            <label for="InputLastName">Last Name</label>
-                            <input type="text" class="form-control" id="InputLastName">
+                            <label for="InputName">First Name<sup>*</sup></label>
+                            <input type="text" class="form-control" id="InputName" required="true">
                         </div>
                         <div class="form-group">
                             <label for="InputEmail">Email<sup>*</sup></label>
-                            <input type="email" class="form-control" id="InputEmail">
+                            <input type="email" class="form-control" id="InputEmail" required="true">
                         </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="InputPassword">Password<sup>*</sup></label>
-                                    <input type="password" class="form-control" id="InputPassword">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="InputConfirmPassword">Confirm Password<sup>*</sup></label>
-                                    <input type="password" class="form-control" id="InputConfirmPassword">
-                                </div>
-                            </div>
+                        <div class="form-group">
+                            <label for="InputContact">Contact No.<sup>*</sup></label>
+                            <input type="text" class="form-control" id="InputContact" required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="InputDepartment">Department<sup>*</sup></label>
+                            <input type="text" class="form-control" id="InputDepartment" required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="InputProject">Recent Project(s)</label>
+                            <input type="textbox" class="form-control" id="InputProject">
+                        </div>
+                        <div class="form-group">
+                            <label for="InputLinkedIn">LinkedIn Profile Link<sup>*</sup></label>
+                            <input type="url" class="form-control" id="InputLinkedIn">
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <label class="checkbox-inline">
-                                    <input type="checkbox" id="inlineCheckbox1" value="option1"> I read <a href="#">Terms and Conditions</a>.
+                                    <input type="checkbox" id="inlineCheckbox1" value="option1" required="true"> I read <a href="#">Terms and Conditions</a>.
                                 </label>
                             </div>
                             <div class="col-md-6">
