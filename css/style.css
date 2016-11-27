@@ -63,7 +63,7 @@ strong {
 }
 
 .section-title {
-    border-bottom: solid 7px #d9dee7;
+    border-bottom: solid 7px #E5E13C;
     padding-bottom: 10px;
     margin-bottom: 30px;
     overflow: hidden;
@@ -489,7 +489,7 @@ background-color: transparent;
 }
 
 .navbar-robotic .navbar-brand  > span {
-    color: #5ec2ff;
+    color: #0b5ec4;
 }
 
 

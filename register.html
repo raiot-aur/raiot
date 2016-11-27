@@ -44,10 +44,22 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="register-form">
-                    <form role="form">
+                    <form role="form" action="register.php">
                         <div class="form-group">
-                            <label for="InputName">First Name<sup>*</sup></label>
+                            <label for="InputName">Name<sup>*</sup></label>
                             <input type="text" class="form-control" id="InputName" required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="InputName">Enrolment No.<sup>*</sup></label>
+                            <input type="text" class="form-control" id="InputName" required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="InputIntrest">Field of Interest<sup>*</sup></label>
+                            <select name="InputName" class="form-control" required="true">
+                                <option value="robotics">Robotics</option>
+                                <option value="automation">Automation</option>
+                                <option value="iot">Internet of Things</option>
+                            </select>
                         </div>
                         <div class="form-group">
                             <label for="InputEmail">Email<sup>*</sup></label>
@@ -62,21 +74,33 @@
                             <input type="text" class="form-control" id="InputDepartment" required="true">
                         </div>
                         <div class="form-group">
-                            <label for="InputProject">Recent Project(s)</label>
+                            <label for="InputSem">Semester<sup>*</sup></label>
+                            <select name="InputSem" class="form-control" required="true">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="InputProject">Recent Project(s) (if any)</label>
                             <input type="textbox" class="form-control" id="InputProject">
                         </div>
                         <div class="form-group">
-                            <label for="InputLinkedIn">LinkedIn Profile Link<sup>*</sup></label>
+                            <label for="InputLinkedIn">LinkedIn Profile Link</label>
                             <input type="url" class="form-control" id="InputLinkedIn">
                         </div>
+                        <div class="form-group">
+                            <label for="InputCV">Upload Your CV</label>
+                            <input type="file" class="form-control" id="InputCV">
+                        </div>
                         <div class="row">
-                            <div class="col-md-6">
-                                <label class="checkbox-inline">
-                                    <input type="checkbox" id="inlineCheckbox1" value="option1" required="true"> I read <a href="#">Terms and Conditions</a>.
-                                </label>
-                            </div>
-                            <div class="col-md-6">
-                                <button type="submit" class="btn btn-primary pull-right">Register</button>
+                            <div class="col-md-2">
+                                <button type="submit" class="btn btn-primary pull-left">Register</button>
                             </div>
                         </div>
                     </form>
@@ -86,15 +110,33 @@
                 <div class="register-terms">
                     <h2>Terms and Conditions</h2>
                     <ol>
-                        <li>Eligibility: All Branches</li>
+                        <li>Eligibility: All Branches, All Semesters</li>
                         <li>Software Knowledge:
                             <ul>
-                                <li></li>
+                                <li>Web:
+                                    <ul>
+                                        <li>PHP</li>
+                                        <li>HTML/CSS</li>
+                                        <li>JS</li>
+                                    </ul>
+                                </li>
+                                <li>Programming:
+                                    <ul>
+                                        <li>Python</li>
+                                        <li>C/C++</li>
+                                        <li>Linux (Optional)</li>
+                                    </ul>
+                                </li>
+                                <li>Hardware Knowledge: (any one)
+                                    <ul>
+                                        <li>Atmega</li>
+                                        <li>Raspberry Pi</li>
+                                        <li>Arduino</li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
-                        <li>Eligibility: All Branches</li>
-                        <li>Eligibility: All Branches</li>
-                        <li>Eligibility: All Branches</li>
+                        <li>Requisites: Atleast one working project or profile</li>
                     </ol>
                 </div>
             </div> <!-- col-md-6 -->
