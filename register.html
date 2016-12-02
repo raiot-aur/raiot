@@ -20,17 +20,20 @@
     <nav class="navbar navbar-robotic navbar-static-top">
         <div class="container">
             <header class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Robotics Automation & <span>Internet of Things</span></a>
+                <a class="navbar-brand" href="www.raiot.com">Robotics Automation & <span>Internet of Things</span></a>
             </header> <!-- navbar-header -->
 
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-nav-robotic navbar-right">
-                    <li class="active"><a href="www.amity.edu"><img src="img/amity.png" width="15px"> Amity University Rajasthan</a></li>
+                    <li><a href="www.amity.edu"><img src="img/amity.png" width="15px"> Amity University Rajasthan</a></li>
+                <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html"><i class="icon-home"></i>Home</a></li>
+                            <li><a href="register.html"><i class="icon-angle-right" aria-hidden="true"></i>Join Now</a></li>
+                            <li><a href="contact.html"><i class="icon-phone"></i>Contact Us</a></li>
+                        </ul>
+                    </li>
                 </ul> <!-- navbar-nav -->
             </div><!--navbar-collapse -->
         </div> <!--container -->
@@ -44,18 +47,18 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="register-form">
-                    <form role="form" action="register.php">
+                    <form role="form" method="post" action="register.php">
                         <div class="form-group">
                             <label for="InputName">Name<sup>*</sup></label>
-                            <input type="text" class="form-control" id="InputName" required="true">
+                            <input type="text" class="form-control" id="InputName" name="InputName" required="true">
                         </div>
                         <div class="form-group">
-                            <label for="InputName">Enrolment No.<sup>*</sup></label>
-                            <input type="text" class="form-control" id="InputName" required="true">
+                            <label for="InputEnrol">Enrolment No.<sup>*</sup></label>
+                            <input type="text" class="form-control" id="InputEnrol" name="InputEnrol" required="true">
                         </div>
                         <div class="form-group">
                             <label for="InputIntrest">Field of Interest<sup>*</sup></label>
-                            <select name="InputName" class="form-control" required="true">
+                            <select name="InputIntrest" class="form-control" required="true">
                                 <option value="robotics">Robotics</option>
                                 <option value="automation">Automation</option>
                                 <option value="iot">Internet of Things</option>
@@ -63,15 +66,15 @@
                         </div>
                         <div class="form-group">
                             <label for="InputEmail">Email<sup>*</sup></label>
-                            <input type="email" class="form-control" id="InputEmail" required="true">
+                            <input type="email" class="form-control" id="InputEmail" name="InputEmail" required="true">
                         </div>
                         <div class="form-group">
                             <label for="InputContact">Contact No.<sup>*</sup></label>
-                            <input type="text" class="form-control" id="InputContact" required="true">
+                            <input type="text" class="form-control" id="InputContact" name="InputContact" required="true">
                         </div>
                         <div class="form-group">
                             <label for="InputDepartment">Department<sup>*</sup></label>
-                            <input type="text" class="form-control" id="InputDepartment" required="true">
+                            <input type="text" class="form-control" id="InputDepartment" name="InputDepartment" required="true">
                         </div>
                         <div class="form-group">
                             <label for="InputSem">Semester<sup>*</sup></label>
@@ -88,15 +91,15 @@
                         </div>
                         <div class="form-group">
                             <label for="InputProject">Recent Project(s) (if any)</label>
-                            <input type="textbox" class="form-control" id="InputProject">
+                            <input type="textbox" class="form-control" id="InputProject" name="InputProject">
                         </div>
                         <div class="form-group">
                             <label for="InputLinkedIn">LinkedIn Profile Link</label>
-                            <input type="url" class="form-control" id="InputLinkedIn">
+                            <input type="url" class="form-control" id="InputLinkedIn" name="InputLinkedIn">
                         </div>
                         <div class="form-group">
                             <label for="InputCV">Upload Your CV</label>
-                            <input type="file" class="form-control" id="InputCV">
+                            <input type="file" class="form-control" id="InputCV" name="InputCV">
                         </div>
                         <div class="row">
                             <div class="col-md-2">
