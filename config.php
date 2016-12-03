@@ -1,5 +1,5 @@
 <?php
 
-$link = mysqli_connect("localhost","root","","raiot");
+	$link = mysqli_connect("localhost","root","","raiot");
 
 ?>

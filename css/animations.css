@@ -1,10 +1,4 @@
-
-/* Animations */
-/* -------------------------------------------------------------- */
-
-/* down */
-
- @keyframes down {
+@keyframes down {
 	from {
 	transform: translate(0,-550px);
 	}
