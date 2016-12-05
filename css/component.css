@@ -129,3 +129,39 @@ figure.cs-style-3.cs-hover figcaption {
 		min-width: 300px;
 	}
 }
+
+figure.cs-style-6 img {
+	z-index: 10;
+	-webkit-transition: -webkit-transform 0.4s;
+	-moz-transition: -moz-transform 0.4s;
+	transition: transform 0.4s;
+}
+
+.no-touch figure.cs-style-6:hover img,
+figure.cs-style-6.cs-hover img {
+	-webkit-transform: translateY(-50px) scale(0.5);
+	-moz-transform: translateY(-50px) scale(0.5);
+	-ms-transform: translateY(-50px) scale(0.5);
+	transform: translateY(-50px) scale(0.5);
+}
+
+.cs-style-6 figcaption {
+	height: 100%;
+	width: 100%;
+}
+
+.cs-style-6 figcaption h3 {
+	position: absolute;
+	bottom: 40px;
+}
+
+.cs-style-6 figcaption span {
+	position: absolute;
+	bottom: 20px;
+}
+
+.cs-style-6 figcaption a {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}

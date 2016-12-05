@@ -51,62 +51,67 @@
             <div class="col-lg-8 col-md-7">
                 <section class="home-about">
                     <div class="section-title">
-                        <h1>Automation</h1>
+                        <h1>EEG-Based Game Simulator</h1>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <h3>Sprinkler Automation</h3>
-                        <figure class="caption cs-style-3">
-                            <img src="img/sprinkler.jpg" alt="Sprinkler Automation">
-                            <figcaption>
-                                <h3>Sprinkler Automation</h3>
-                                <span>Learn More</span>
-                                <a class="btn btn-robotic-inverse" href="#">Take a look</a>
-                            </figcaption>
-                        </figure>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <img src="img/eeggamesimulator.jpg" width="100%">
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <h3>Hand-Gesture Game Simulator</h3>
-                        <figure class="caption cs-style-3">
-                            <img src="img/hggs.jpg" alt="Hand-Gesture Game Simulator">
-                            <figcaption>
-                                <h3>Hand-Gesture Game Simulator</h3>
-                                <span>Learn More</span>
-                                <a class="btn btn-robotic-inverse" href="quadcopter.html">Take a look</a>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <h3>EEG-Based Game Simulator</h3>
-                        <figure class="caption cs-style-3">
-                            <img src="img/eeggamesimulator.jpg" alt="EEG-Based Game Simulator">
-                            <figcaption>
-                                <h3>EEG-Based Game Simulator</h3>
-                                <span>Learn More</span>
-                                <a class="btn btn-robotic-inverse" href="eeggamesimulator.html">Take a look</a>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <h3>Image Processing</h3>
-                        <figure class="caption cs-style-3">
-                            <img src="img/imageprocessing.jpg" alt="Image Processing">
-                            <figcaption>
-                                <h3>Image Processing</h3>
-                                <span>Learn More</span>
-                                <a class="btn btn-robotic-inverse" href="#">Take a look</a>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <h3>Lungs Compliance Meter</h3>
-                        <figure class="caption cs-style-3">
-                            <img src="img/lungscompliance.jpg" alt="Lungs Compliance Meter">
-                            <figcaption>
-                                <h3>Lungs Compliance Meter</h3>
-                                <span>Learn More</span>
-                                <a class="btn btn-robotic-inverse" href="#">Take a look</a>
-                            </figcaption>
-                        </figure>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2>Objective</h2>
+                        <p>The objective of this project is to <b>enhance gaming experience</b> at cheap costs and the primary focus is to develop an open source dedicated device that can sense alpha/beta brain waves possibly and further the data can be utilized to simulate windows games like racing (NFSMMW, Asphalt8), open world (GTA) etc. At initial stage, the target is to filter alpha-waves for capturing basic human body movements like left-right arm, eyes blink, head direction in real-time.</p>
+                        <h2>History of the Study</h2>
+                        <p>There is a lot of research already going in this <b>Cognitive Science for Brain Computer Interface(BCI)</b>. Neuro-Sky has already developed Mind-wave headset for interpreting brain signals to their inbuilt controller and further the data is communicated over Wi-Fi or Bluetooth. But these products are too costly and least feasible to be used for any student/developer. This prototype will be functioning on best single-board computer <b>“RaspberryPi”</b> which runs Linux based OS <b>“Raspbian”</b>. By, using Open-Source software and Python everyone can build their own interfaces to interpret the Brain Waves/Signals.</p>
+                        <h2>Methodology</h2>
+                        <p><ul>
+                            <li>Design Amplifier Circuit to amplify the voltage of each electrode</li>
+                            <li>Convert Analog value to Digital, so that RPi GPIO can sense</li>
+                            <li>Implementation & Coding
+                                <ul>
+                                    <li>Design UI for data/signal visualization using <b>PyQt</b> in Python</li>
+                                    <li>Program logic to interpret brain-signals</li>
+                                    <li>Create socket connection to send signals in Server/Raspberrypi</li>
+                                    <li>Create client side connection to receive signals in windows/client machine</li>
+                                    <li>Trigger keyboard strokes, Auto Hotkeys using DirectX Programming respective to each filtered signal</li>
+                                </ul>
+                            </li>
+                            </ul>
+                        </p>
+                        <h2>Equipments Required</h2>
+                        <p>
+                            <ul>
+                                <li>Raspberry Pi3</li>
+                                <li>Instrumentational Amplifier</li>
+                                <li>Op. Amplifier</li>
+                                <li>EEG Electrodes, Gel</li>
+                            </ul>
+                        </p>
+                        <h2>Initial Timeline</h2>
+                        <p>
+                            <ul>
+                                <li><b>1 Week</b> - Learn how the various EEG Electrodes work</li>
+                                <li><b>2 Weeks</b> - Learn more about EEG and Brain Waves to decode for physical movement of body</li>
+                                <li><b>2 Weeks</b> - Find hardware parts and design amplifier circuit</li>
+                                <li><b>2 Weeks</b> - Implement openEEG software using BCI in Python & C++</li>
+                                <li><b>1 Week</b> - Develop GUI software for EEG data visualization</li>
+                                <li><b>3 Weeks</b> - Integrate all things and testing of prototype</li>
+                            </ul>
+                            This is just an initial time line and not enough detail is known to provide a better time estimate. These steps may not be carried out in the same order as they appear above either and a more iterative approach is likely to be used.
+                        </p>
+                        <h2>Conclusion and Future Scope</h2>
+                        <p>The short-term goal is to build a prototype with some accuracy and interpret at least alpha-waves. Future scope of this is to process language and thinking of brain to some meaningful data. Also, the vision of this project is to record <b>Human Dreams</b>.</p>
+                        <div class="block col-lg-6">
+                            <h2><i class="icon-folder-open"></i>Project Handled By:</h2>
+                            <ol>
+                                <li>Vishal Aditya - B.Tech CSE (2013-2017)</li>
+                                <li>Vamshi Reddy - B.Tech CSE (2013-2017)</li>
+                            </ol>
+                        </div>
+                        <div class="block col-lg-6">
+                            <h2><i class="icon-folder-open"></i>References:</h2>
+                            <ul>
+                                <li><a href="http://www.slideshare.net/VishalAditya/eeg-game-simulator">EEG-Based Game Simulator by Vishal Aditya</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -121,6 +126,8 @@
                                 <li><a href="iot.html">Internet of Things</a></li>
                             </ul>
                         </div>
+                    </aside>
+                    <aside class="sidebar">
                     </aside> <!-- Sidebar -->
                 </div>
             </div> <!-- row -->
