@@ -29,10 +29,6 @@ figure.caption img {
 .grid figcaption span:before {
 }
 
-.grid figcaption a {
-
-}
-
 /* Caption Style 1 */
 .cs-style-1 figcaption {
 	height: 100%;
@@ -147,7 +143,7 @@ figure.cs-style-6.cs-hover img {
 
 .cs-style-6 figcaption {
 	height: 100%;
-	width: 100%;
+	width: 87%;
 }
 
 .cs-style-6 figcaption h3 {
