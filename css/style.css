@@ -518,6 +518,40 @@ ul.navbar-nav-robotic > li.dropdown-menu {
   }
 }
 
+.dropbtn {
+    background-color: #fff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #D3D3D3;
+}
+
 /* navbar-toggle */
 
 .navbar-robotic .navbar-toggle {
@@ -866,8 +900,6 @@ ul.navbar-nav-robotic > li.dropdown-menu {
 
 .team-home-item > .team-home-footer {
     text-align: center;
-
-    
 }
 
 .team-home-item > .team-home-footer a {
@@ -972,36 +1004,6 @@ ul.navbar-nav-robotic > li.dropdown-menu {
     margin: 0 2% 10px 2%;
 }
 
-
-
-/* latest-post */
-/* ------------------------------------------------------------------ */
-
-
-.home-post-item img {
-    margin-bottom: 20px;
-    padding: 5px;
-    border: solid 1px #ccc;
-}
-
-.home-post-item img:hover {
-    border: solid 1px #5fc3ff;
-    -webkit-transform: translate(0,-12px);
-    transition: all .2s;
-    -webkit-transition: all .2s;
-}
-
-
-.home-post-item h3 {
-    font-size: 1.8em;
-}
-
-.comp-figures figure {
-    width: 90%;
-    display: block;
-    margin: inherit auto !important;
-    max-width: 400px;
-}
 
 /* ERROR 404 PAGE */
 /* ------------------------------------------------------------------ */
@@ -1263,35 +1265,6 @@ a.tag:hover {
     margin-bottom: 15px;
 }
 
-/* Comments */
-
-.comments {
-    margin-bottom: 15px;
-    font-size: 0.9em;
-}
-
-.comments .media {
-    margin-bottom: 10px;
-}
-
-.comments .media-object {
-    padding: 3px;
-    border: solid 1px #ccc;
-}
-
-.comments h4 {
-    font-weight: 400;
-}
-
-.comments h4 > span {
-    float: right;
-    font-size: .7em;
-}
-
-.comment-form {
-    margin-bottom: 20px;
-}
-
 /* Footer */
 
 #last-widgets {
@@ -1332,10 +1305,6 @@ a.tag:hover {
 
 .footer-widget li > a > i {
     margin-right: 10px;
-}
-
-.footer-post img {
-    border: solid 3px #777;
 }
 
 .footer-post-date {
