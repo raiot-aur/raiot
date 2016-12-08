@@ -492,6 +492,7 @@ ul.navbar-nav-robotic > li.dropdown-menu {
     border-top: solid 1px #5fc3ff;
     border-bottom: solid 1px #5fc3ff;
     color: #929cb1;
+    content: "\a0»";
 }
 
 .navbar-robotic .dropdown-menu > li > a > i {
@@ -530,8 +531,7 @@ ul.navbar-nav-robotic > li.dropdown-menu {
     position: absolute;
     background-color: #fff;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
+    }
 
 .dropdown-content a {
     color: black;
@@ -547,8 +547,36 @@ ul.navbar-nav-robotic > li.dropdown-menu {
     display: block;
 }
 
+.dropbtns {
+    background-color: #fff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdowns-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdowns-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdowns-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdowns:hover .dropdowns-content {
+    display: block;
+}
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
+.dropdowns:hover .dropbtn {
     background-color: #D3D3D3;
 }
 
