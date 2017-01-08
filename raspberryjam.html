@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>RAIOT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/animations.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-robotic navbar-static-top">
+        <div class="container">
+            <header class="navbar-header">
+                <a class="navbar-brand" href="index.html">Robotics Automation & <span>Internet of Things</span></a>
+            </header> <!-- navbar-header -->
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-nav-robotic navbar-right">
+                    <!-- <li><a href="https://www.amity.edu"><img src="img/amity.png" width="15px"> Amity University</a></li> -->
+                    <li class="dropdown">
+                        <!-- <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu<b class="caret"></b></a> -->
+                        <div class="dropdown-content" type="none">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="team.html">Our Team</a>
+                            <li><a href="register.html">Join Now</a></li>
+                            <li class="dropdowns">
+                                <a href="#" class="dropdowns-toggle" data-toggle="dropdowns">Projects<b class="caret"></b></a>
+                                <ul class="dropdowns-content">
+                                    <a href="robotics.html">Robotics</a>
+                                    <a href="automation.html">Automation</a>
+                                    <a href="iot.html">Internet of Things</a>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </div>
+                    </li>
+                </ul> <!-- navbar-nav -->
+            </div><!--navbar-collapse -->
+        </div> <!--container -->
+    </nav> <!-- navbar-robotic -->
+    </nav> <!-- navbar-robotic -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-7">
+                <section class="home-about">
+                    <div class="section-title">
+                        <h1>Amity Rasbberry Jam</h1>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <img src="img/raspberryjam.jpg" width="100%">
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2>Objective</h2>
+                        <p>The objective of this project is to <b>enhance gaming experience</b> at cheap costs and the primary focus is
+                        to develop an open source dedicated device that can be used to simulate better gaming experience. 
+                        Supports All Windows Games, currently functioning over Ethernet & WiFi. 
+                        </p>
+                        <h2>Methodology</h2>
+                        <p><ul>
+                            <li><h3>Hardware Setup:</h3>
+                                <ul>
+                                    <li>Fix ADXL345 accelerometer in the palm side of Gloves.</li>
+                                    <li>Connect all wires with Pi GPIO Pins.</li>
+                                    <li>Place all setup wherever you want.</li>
+                                    <li>Connect all pins of accelerometer & GPIO properly follow links for tutorial.</li>
+                                    <li><a href="http://www.stuffaboutcode.com/2014/06/raspberry-pi-adxl345-accelerometer.html" target="_blank">Stuff About ADXL345 Accelerometer & Python</a> </li>
+                                </ul>
+                            </li>
+                            <li><h3>Software Setup:</h3>
+                                <ul>
+                                    <li>How to use 3-Axis Accelerometer for Tilt Sensing. <strong><a href="https://linksredirect.com/?pub_id=6017CL5663&source=js&url=https%3A//www.dfrobot.com/wiki/index.php%3Ftitle%3DHow_to_Use_a_Three-Axis_Accelerometer_for_Tilt_Sensing%23Yaw-Pitch-Roll" target="_blank">Tutorial</a></strong></li>
+                                    <li>I used Roll & Pitch axis only for forward, backward, left, right, nitro & handbrake parameters to control the game.</li>
+                                    <li>Download all source code.</li>
+                                    <li>Start server from windows system to receive axis tilts in degrees. Run <strong><a href="https://github.com/vsl-tech/hggamesimulator/blob/master/GAME%2520SERVER.py" target="_blank">GameServer.py</a></strong></li>
+                                    <li>Send UDP packets from Pi to server. Run <strong><a href="https://github.com/vsltech/hggamesimulator/blob/master/client.py" target="_blank">Client.py</a></strong></li>
+                                    <li>Enter IP of your connection not IP of Pi.</li>
+                                    <li>Open cmd & type ipconfig/all to see IP of your connection.</li>
+                                    <li>Start Pi using putty for faster connection. <strong><a href="https//www.modmypi.com/blog/remotely-accessing-the-raspberry-pi-via-ssh-console-mode" target="_blank">Tutorial</a></strong></li>
+                                    <li>Create hotspot & connect both Pi & Windows system for Wireless Control.</li>
+                                    
+                            </ul>
+                        </p>
+                        <h2>Equipments Required</h2>
+                        <p>
+                            <ul>
+                                <li>Raspberry Pi3</li>
+                                <li>Adxl345 Digital Acceleromelerometer</li>
+                                <li>Jumper wires (generic)</li>
+                            </ul>
+                        </p>
+                        
+                        <h2>Conclusion and Future Scope</h2>
+                        <p>Future scope of this project is to calibrate with all types of games and we are trying to build it for <b>shooting & action games</b>.</p>
+                        <div class="block col-lg-6">
+                            <h2><i class="icon-folder-open"></i>Project Handle:</h2>
+                            <ol>
+                                <li>Vishal Aditya - B.Tech CSE (2013-2017)</li>
+                            </ol>
+                        </div>
+                        <div class="block col-lg-6">
+                            <h2><i class="icon-folder-open"></i>References:</h2>
+                            <ul>
+                                <li><a href="https://www.hackster.io/vsl-tech/hand-gesture-game-simulator-c252fa" target="_blank">Tutorial on Hackster</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <aside class="sidebar">
+                        <div class="block">
+                            <h2><i class="icon-folder-open"></i>Projects</h2>
+                            <ul>
+                                <li><a href="robotics.html" class="active">Robotics</a></li>
+                                <li><a href="automation.html">Automation</a></li>
+                                <li><a href="iot.html">Internet of Things</a></li>
+                            </ul>
+                        </div>
+                        <div class="block">
+                            <h2><i class="icon-folder-open"></i>Events</h2>
+                            <ul>
+                                <li><a href="raspberryjam.html" class="active">Amity Raspberry Jam</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <aside class="sidebar">
+                    </aside> <!-- Sidebar -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- row -->
+    </div> <!--container -->
+
+
+    <aside id="last-widgets">
+        <div class="container">
+            <div class="col-md-2">
+                <section class="footer-widget">
+                    <h3>Navigate</h3>
+                    <ul class="footer-sitemap">
+                        <li><a href="index.html"><i class="icon-angle-right"></i>Home</a></li>
+                        <li><a href="register.html"><i class="icon-angle-right"></i>Join Now</a></li>
+                        <li><a href="team.html"><i class="icon-angle-right"></i>Our Team</a></li>
+                        <li><a href="contact.html"><i class="icon-angle-right"></i>Contact Us</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="col-md-2">
+                <section class="footer-widget">
+                    <div class="footer-social">
+                        <h3>Social media</h3>
+                        <a href="#" class="i-google"><i class="icon-google-plus"></i></a>
+                        <a href="#" class="i-twitter"><i class="icon-twitter"></i></a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" class="i-facebook"><i class="icon-facebook"></i></a>
+                        <a href="#" class="i-linkedin"><i class="icon-linkedin"></i></a>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-3">
+                <section class="footer-widget">
+                    <h3>Locate Us</h3>
+                    <address>
+                        Amity University Rajasthan<br>
+                        Jaipur, Rajasthan (303007)<br>
+                        Phone: +91-9828614330  <br>
+                        Email: <a href="mailto:raiot.aur@gmail.com">raiot.aur@gmail.com</a>
+                    </address>
+                </section>
+            </div>
+            <div class="col-md-1">
+                <section class="footer-logo">
+                    <img src="img/onlyLogo.png" width=100>
+                </section>
+            </div>
+            <div class="col-md-3">
+                <section class="footer-logo">
+                    <h3 class="logo"><span>Robotics<br>Automation &<br></span>Internet of Things<br>Laboratory</h3>
+                </section>
+            </div>
+        </div>
+    </aside>
+
+    <footer id="footer">
+        <div class="container">
+            <p>&copy; 2016 <a href="index.html">Robotics Automation & <span>Internet of Things</span></a> All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/toucheffects.js"></script>
+    
+</body>
+</html>
