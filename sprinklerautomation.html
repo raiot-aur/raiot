@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>RAIOT</title>
+    <title>RAIOT- Sprinkler Automation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/component.css" />
 
 </head>
+
 <body>
     <nav class="navbar navbar-robotic navbar-static-top">
         <div class="container">
@@ -50,62 +51,74 @@
             <div class="col-lg-8 col-md-7">
                 <section class="home-about">
                     <div class="section-title">
-                        <h1>Automation</h1>
+                        <h1>Sprinkler Automation</h1>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <h3>Sprinkler Automation</h3>
-                        <figure class="caption cs-style-3">
-                            <a href="sprinklerautomation.html"><img src="img/sprinkler.jpg" alt="Sprinkler Automation"></a>
-                            <figcaption>
-                                <h3>Sprinkler Automation</h3>
-                                <span>Learn More</span>
-                                <a class="btn btn-robotic-inverse" href="sprinklerautomation.html">Take a look</a>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <h3>Hand-Gesture Game Simulator</h3>
-                        <figure class="caption cs-style-3">
-                            <a href="https://raiot-aur.github.io/raiot/handgesturegamesimulator.html"><img src="img/hggs.jpg" alt="Hand-Gesture Game Simulator"></a>
-                            <figcaption>
-                                <h3>Hand-Gesture Game Simulator</h3>
-                                <span>Learn More</span>
-                                <a class="btn btn-robotic-inverse" href="handgesturegamesimulator.html">Take a look</a>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <h3>EEG-Based Game Simulator</h3>
-                        <figure class="caption cs-style-3">
-                            <a href="eeggamesimulator.html"><img src="img/eeggamesimulator.jpg" alt="EEG-Based Game Simulator"></a>
-                            <figcaption>
-                                <h3>EEG-Based Game Simulator</h3>
-                                <span>Learn More</span>
-                                <a class="btn btn-robotic-inverse" href="eeggamesimulator.html">Take a look</a>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <h3>Image Processing</h3>
-                        <figure class="caption cs-style-3">
-                            <a href="#"><img src="img/imageprocessing.jpg" alt="Image Processing"></a>
-                            <figcaption>
-                                <h3>Image Processing</h3>
-                                <span>Learn More</span>
-                                <a class="btn btn-robotic-inverse" href="#">Take a look</a>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6">
-                        <h3>Lungs Compliance Meter</h3>
-                        <figure class="caption cs-style-3">
-                            <a href="#"><img src="img/lungscompliance.jpg" alt="Lungs Compliance Meter"></a>
-                            <figcaption>
-                                <h3>Lungs Compliance Meter</h3>
-                                <span>Learn More</span>
-                                <a class="btn btn-robotic-inverse" href="#">Take a look</a>
-                            </figcaption>
-                        </figure>
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <h2>Objective</h2>
+                        <p>The ultimate sprinkler controller is at hand. Introducing Smart Sprinkler Controller that gives you control of your sprinklers and watering bill, right from your smart phone.</p>
+                        <h2>Brief</h2>
+                        <p>
+                        In an easy step-by-step process, which tells you about your plants, soil, sprinklers, sun exposure and more for each zone of your yard. The Smart Sprinkler Controller automatically calculates watering cycles to deliver just the right amount of water while minimizing runoff. It turns on when the water is required and automatically switches the sprinkler off when there is no more water needed.</p>
+                        <h2>Methodology</h2>
+                        <p>
+                            <ul>
+                                <li>Soil Sensors are connected to the Arduino which would be used to control the central system. These soil sensors will give regular readings which ultimately helps in controlling the valves of the sprinkler. Different range of readings would be the result, according to the soil quality and manageability.</li>
+                                <li>The given readings, forwarded to the Arduino, are further sent to the dedicated application. Necessary action is calculated by the application, whether to switch the sprinkler on or off.</li>
+                                <li>The dedicated mobile and web apps are designed in such a way that, they give the real-time status of the required sprinkler and the water content of the soil in that space.</li>
+                            </ul>
+                        </p>
+                        <h2>Equipments Required</h2>
+                        <p>
+                            <ul>
+                                <li>Arduino</li>
+                                <li>Soil Sensors</li>
+                                <li>Long Connecting Wires</li>
+                                <li>Central RPi Server</li>
+                                <li>Ethernet Shield along with the LAN Cable</li>
+                                <li>Dedicated Android Application</li>
+                            </ul>
+                        </p>
+                        <h2>Initial Timeline</h2>
+                        <p>
+                            <ul>
+                                <li><b>Stage I</b> - 
+                                    <ul>
+                                        <li>Readings from soil sensor, analyzing it and representation of the same on graph.</li>
+                                        <li>Developing Dedicated Android Application</li>
+                                        <li>Developing dedicated web-page</li>
+                                        <li>Making environment on Arduino compatible with the required use.</li>
+                                    </ul>
+                                </li>
+                                <li><b>Stage II</b> -
+                                    <ul>
+                                        <li>Controlling Sensors and Sprinklers and making it user-friendly.</li>
+                                        <li>Setting up the sensors, making them less vulnerable to the environment.</li>
+                                    </ul>
+                                </li>
+                            This is just an initial time line and not enough detail is known to provide a better time estimate. These steps may not be carried out in the same order as they appear above either and a more iterative approach is likely to be used.
+                        </p>
+                        <h2>Conclusion and Future Scope</h2>
+                        <p>
+                        <ul>    
+                            <li>Reduces the effort of frequently switching on/off the sprinkler.</li>
+                            <li>Perfect and efficient Water supply management</li>
+                            <li>Adaptive Control Systems, as the required water amount for each weather will be set automatically.</li>
+                            <li>Reducing the surface runoff by automatically switching off the sprinkler of the fulfilled region.</li>
+                        </ul>
+                        <div class="block col-lg-6">
+                            <h2><i class="icon-folder-open"></i>Project Handle:</h2>
+                            <ol>
+                                <li>Lakshay Parnami - B.Tech CSE (2013-2017)</li>
+                                <li>Harsh Garg - B.Tech CSE (2013-2017)</li>
+                                <li>Prayas Mittal - B.Tech CSE (2015-2019)</li>
+                            </ol>
+                        </div>
+                        <div class="block col-lg-6">
+                            <h2><i class="icon-folder-open"></i>References:</h2>
+                            <ul>
+                                <li><a href="http://robokits.co.in/robot-kits/humanoid-robot-kit/17dof-humanoid-robot-diy-kit-with-18-servo-controller">17 DOF Humanoid by Robokits</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -126,6 +139,8 @@
                                 <li><a href="raspberryjam.html" class="active">Amity Raspberry Jam</a></li>
                             </ul>
                         </div>
+                    </aside>
+                    <aside class="sidebar">
                     </aside> <!-- Sidebar -->
                 </div>
             </div> <!-- row -->
@@ -139,7 +154,7 @@
                 <section class="footer-widget">
                     <h3>Navigate</h3>
                     <ul class="footer-sitemap">
-                        <li><a href="#index.html"><i class="icon-angle-right"></i>Home</a></li>
+                        <li><a href="index.html"><i class="icon-angle-right"></i>Home</a></li>
                         <li><a href="register.html"><i class="icon-angle-right"></i>Join Now</a></li>
                         <li><a href="team.html"><i class="icon-angle-right"></i>Our Team</a></li>
                         <li><a href="contact.html"><i class="icon-angle-right"></i>Contact Us</a></li>
