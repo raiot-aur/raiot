@@ -16,6 +16,15 @@
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8&appId=1826155780994350";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
     <nav class="navbar navbar-robotic navbar-static-top">
         <div class="container">
             <header class="navbar-header">
@@ -67,6 +76,7 @@
                         <a class="btn btn-robotic" href="robotics.html">Robotics</a> <a class="btn btn-robotic" href="automation.html">Automation</a> <a class="btn btn-robotic" href="iot.html">IoT</a><br><br>
                         <a href="https://www.facebook.com/raiot.aur" class="i-facebook"><i class="icon-facebook"></i></a>&nbsp;&nbsp;<a href="mailto:raiot.aur@gmail.com" class="i-envelope"><i class="icon-envelope"></i></a></center>
                 </aside> <!-- Sidebar -->
+                <div class="fb-like" data-href="https://www.facebook.com/raiot.aur/" data-layout="box_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
             </div>
             <div class="col-lg-6 col-md-6">
                 <img src="img/raiotposter.jpg" width="100%">
