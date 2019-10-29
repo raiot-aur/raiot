@@ -26,6 +26,10 @@ strong {
     color: #6D7484;
 }
 
+.footer-logo .logo {
+    margin-left: 10px;
+}
+
 .video {
     position: relative;
     padding-bottom: 56.25%;
@@ -140,7 +144,8 @@ background-color: transparent;
 
 .btn-robotic:hover {
     border-color: #24395d;
-    color: #24395d;
+    background-color: #24395d;
+    color: #ffffff !important;
 }
 
 .btn-robotic-inverse {
@@ -1267,7 +1272,6 @@ a.tag:hover {
 /* Footer */
 
 #last-widgets {
-    margin-top: 30px;
     padding-top: 20px;
     background-color: #444;
     border-top: solid 2px #5fc3ff;
